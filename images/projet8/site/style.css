@@ -1,0 +1,226 @@
+@font-face {
+	font-family: "DroidSerif";
+	src: url('droid-serif/DroidSerif-Regular.ttf');
+}
+
+@font-face {
+	font-family: "DroidSans";
+	src: url('droid-sans/DroidSans.ttf');
+}
+
+body{
+  top: 0;
+  color: gray;
+}
+
+/*   HEADER   */
+
+header{
+  background-image: url('misc/grille.png');
+  top: 0;
+	width: 100%;
+}
+
+header .container{
+	display: -webkit-box;
+	font-size: 0.8em;
+	width: 70%;
+	margin: auto;
+}
+
+.container{
+	font-size: 0.8em;
+	width: 70%;
+	height: 100%;
+	margin: auto;
+}
+
+.logo{
+  margin-top: 15%;
+}
+
+.blc1{
+	margin-left: 10%;
+  font-family: Oswald;
+}
+
+.blc{
+  margin-left: 5%;
+  font-family: Oswald;
+}
+
+.border1{
+  border-bottom: 5px solid rgba(235, 104, 8, 1);
+}
+
+.border2{
+  border-bottom: 5px solid rgba(243, 208, 80, 1);
+}
+
+.border3{
+  border-bottom: 5px solid rgba(184, 206, 135, 1);
+}
+
+.border4{
+  border-bottom: 5px solid rgba(66, 138, 185, 1);
+}
+
+.border5{
+  border-bottom: 5px solid rgba(183, 125, 200, 1);
+}
+
+/*   BODY   */
+
+.movie{
+  margin: auto;
+	width: 70%;
+  margin-top: 2%;
+}
+
+.mes{
+  height: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+	width: 100%;
+	font-size: 0.7em;
+  background-image: url('misc/grille.png');
+}
+
+.message{
+  font-family: DroidSerif;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: gray;
+  font-size: 1.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+.bordertop{
+	margin-top: 2%;
+	border-top: 2px solid rgba(246, 246, 246, 1);
+}
+
+.borderbottom{
+  margin-bottom: 2%;
+  border-bottom: 2px solid rgba(246, 246, 246, 1);
+}
+
+em{
+  color: #B3B6B7;
+  font-family: DroidSans;
+  font-size: 0.8em;
+}
+
+.coms{
+  font-family: Oswald;
+  display: -webkit-box;
+  height: auto;
+  font-size: 1.3em;
+}
+
+.golf{
+  padding: 1%;
+  border: 2px solid rgba(246, 246, 246, 1);
+  width: 22%;
+	height: 40%;
+}
+
+.accrobranche{
+  margin-left: 5%;
+  width: 22%;
+}
+
+.orange{
+  color: rgba(218, 96, 20, 1)
+}
+
+.lire{
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.commentaires{
+  margin-left: 5%;
+  width: 50%;
+}
+
+.img img{
+  padding: 2%;
+  border: 2px solid rgba(246, 246, 246, 1);
+  margin: 1%;
+}
+
+.coms a{
+  font-family: DroidSerif;
+  text-decoration:none;
+}
+
+/*    FOOTER   */
+
+footer{
+	background-image: url('misc/grille.png');
+	width: 100%;
+	height: auto;
+}
+
+.contact{
+  font-family: Oswald;
+  display: -webkit-box;
+  font-size: 1.2em;
+}
+
+.contacter{
+  width: 22%;
+}
+
+.contacter1{
+  width: 22%;
+  margin-left: 4%;
+}
+
+.cnts{
+  display: -webkit-box;
+}
+
+.cnts1{
+}
+
+.contacter1 a{
+  font-size: 0.8em;
+}
+a{
+  color: gray;
+  font-family: DroidSerif;
+}
+
+.fin{
+  width: 70%;
+	margin: auto;
+}
+
+.brd{
+  margin-right: 1%;
+  padding-left: 1%;
+  border-left: 2px solid rgba(246, 246, 246, 1);
+}
+
+.fin p{
+  margin-left: 1%;
+}
+
+.fin{
+  display: -webkit-box;
+}
+
+.left{
+	width: auto;
+	margin-right: 50%;
+  font-size: 1.2em;
+  display: -webkit-box;
+}
+
+.right{
+  display: -webkit-box;
+}

@@ -1,0 +1,542 @@
+body
+{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a
+{
+  color: black;
+  text-decoration:none;
+}
+
+.container
+{
+  padding: 1% 0;
+  width: 50%;
+  margin: auto;
+}
+
+.rsx
+{
+  background-color: AquaMarine;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 10%;
+}
+
+.rsx img
+{
+  width: 4%;
+}
+
+.head
+{
+  border-bottom: 1px solid gray;
+  background-color: #8470FF;
+  color: black;
+}
+
+.head img
+{
+  width: 30%;
+}
+
+.head .container  a
+{
+  display: inline-block;
+  margin-left: 5%;
+}
+
+nav
+{
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav > ul
+{
+  margin: 0;
+  margin-left: 5%;
+  padding: 0;
+}
+
+nav > ul > li
+{
+  position: relative;
+  float: right;
+  margin-right: 2%;
+}
+
+nav > a
+{
+  position: relative;
+  float: right;
+}
+
+nav > ul::after
+{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li > a
+{
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav li
+{
+  list-style-type: none;
+}
+
+.submenu
+{
+  display: none;
+}
+
+nav li:hover .submenu
+{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  z-index: 100000;
+}
+
+.submenu li:hover
+{
+  background-color: white;
+}
+
+.submenu a:hover
+{
+  color: red;
+}
+
+.submenu li
+{
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: Darkgray;
+  border: 1px solid Darkgray;
+}
+
+.submenu li a
+{
+  color: black;
+  width: auto;
+}
+
+.pub
+{
+  background-color: AquaMarine;
+  height: 45%;
+  border-bottom: 1px solid Darkgray;
+}
+
+.slider
+{
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.slider figure
+{
+  position: relative;
+  width: 600%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.slider figure > span > img
+{
+  width: 16.6666666667%;
+  height: auto;
+  float: left;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  10% { left: 0%; }
+  20% { left: -100%; }
+  30% { left: -100%; }
+  40% { left: -200%; }
+  50% { left: -200%; }
+  60% { left: -300%; }
+  70% { left: -300%; }
+  80% { left: -400%; }
+  90% { left: -400%; }
+  100% { left: -500%; }
+}
+
+.pub .commands {
+	position: absolute;
+  margin-top: 2.5%;
+	padding: 0.1% 0.3%;
+}
+
+.prev {
+  background: url("Maquette/2.png")no-repeat;
+  background-position: 0.5px;
+  width: 0.56%;
+  padding: 0;
+  height: 50px;
+}
+
+.next {
+  background: url("Maquette/2.png")no-repeat;
+  background-position: -45.5px;
+  width: 47px;
+  padding: 0;
+  height: 50px;
+  margin-left: 15.5%;
+}
+
+.pub .commands1 {	display: block; }
+
+.dots_commands  {
+	padding:0;
+	margin: 0;
+	text-align: center;
+}
+
+.dots_commands li {
+	display: inline;
+	padding:0; margin:0;
+}
+
+.dots_commands a
+{
+	position: relative;
+	display: inline-block;
+	height:8px; width: 8px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+}
+
+.dots_commands a:focus
+{
+	outline: none;
+	background: orange;
+}
+
+.dots_commands li:first-child a { z-index: 25; }
+
+.articles > .container
+{
+  display: flex;
+}
+
+.articles img
+{
+  width: 30%;
+  height: 70%;
+  padding: 5%;
+}
+
+.desc
+{
+  margin: 1%;
+  color: white;
+  display: inline-flex;
+  background: #8470FF;
+  width: 90%;
+  height: 30%;
+}
+
+.desc p
+{
+  width: 80%;
+  padding-right: 4%;
+}
+
+.article a
+{
+  color: red;
+}
+
+.article
+{
+  margin: 0 10% 0 1%;
+}
+
+.article > p, .articles > .container
+{
+  margin-top: 1%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container > h2
+{
+  border-bottom: 1px solid Darkgray;
+  padding-bottom: 4%;
+  padding-top: 1%;
+}
+
+.flag figure
+{
+  display: flex;
+}
+
+.flag p
+{
+  display: flex;
+  text-align: center;
+  margin:0;
+}
+
+.flag > .container > figure img
+{
+  padding: 1%;
+  margin: 0 0.1%;
+  border: 1px solid Darkgray;
+  border-radius: 5%;
+  width: 90%;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.flag figure
+{
+  margin: 0;
+}
+
+.f_prev {
+  background: url("Maquette/21.png")no-repeat;
+  background-position: 0 2px;
+  cursor: pointer;
+  width: 40px;
+  height: 24px;
+  margin-top: 5%;
+}
+
+.f_prev:hover {
+  background: url("Maquette/21.png")no-repeat;
+  background-position: 0 -21px;
+  width: 40px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.f_next {
+  background: url("Maquette/22.png")no-repeat;
+  background-position: 0 2px;
+  width: 40px;
+  height: 24px;
+  margin-top: 5%;
+  cursor: pointer;
+  margin-left: -1%;
+}
+
+.f_next:hover {
+  background: url("Maquette/22.png")no-repeat;
+  background-position: 0 -21px;
+  width: 40px;
+  cursor: pointer;
+  height: 24px;
+  margin-top: 5%;
+  margin-left: -1%;
+}
+
+.foot
+{
+  margin-top: 7%;
+  border-top: 1px solid Darkgray;
+  padding-bottom: 5%;
+  border-bottom: 1px solid black;
+  background-color: Aquamarine;
+}
+
+.text1
+{
+  width: 48%;
+  margin-right: 4%;
+
+}
+
+h3
+{
+  padding-bottom: 2%;
+  border-bottom: 1px solid Darkgray;
+}
+
+.text2
+{
+  width: 48%;
+}
+
+.text2 img
+{
+  width: 25%;
+  height: 25%;
+}
+
+.align
+{
+  display: flex;
+}
+
+.item
+{
+  display: inline-flex;
+  margin-bottom: 10%;
+}
+
+.item p
+{
+
+  margin: 0 0 0 5%;
+}
+
+.btn
+{
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  border: 1px solid #00000000;
+  font-family: inherit;
+}
+
+.fin
+{
+  background-color: #8470FF;
+}
+
+.fin a
+{
+  text-decoration: none;
+  font-weight:bold;
+  margin-right: 5%;
+}
+
+.fin > .container > p
+{
+  font-size: 0.8rem;
+  color: Darkgray;
+}
+
+.navend
+{
+ font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 800px)
+{
+  .prev, .next {
+    display: none;
+  }
+  .container
+  {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .container
+  {
+    font-size: 0.7rem;
+    width: 80%;
+    margin: auto;
+  }
+  .imghead
+  {
+    padding-left: 40%;
+    padding-bottom: 5%;
+  }
+  nav
+  {
+    width: 100%;
+    padding: auto;
+  }
+  nav > ul > li
+  {
+    float: none;
+    padding: 3% 0;
+    width: 100%;
+    border-top: 1px solid white;
+  }
+  .head img
+  {
+    width: 55%;
+  }
+  nav li:hover .submenu
+  {
+    display: inline-block;
+    width: 100%;
+    top: 100%;
+    z-index: 100000;
+  }
+  nav > ul
+  {
+    padding: auto;
+  }
+  .articles > .container
+  {
+    display: inline;
+  }
+  .desc img
+  {
+    width: 10%;
+    padding: 1%;
+  }
+  .block
+  {
+    width: 90%;
+    margin: auto;
+  }
+  .align
+  {
+    width: 90%;
+    display: inline;
+  }
+  .text1
+  {
+    width: 90%;
+    margin: auto;
+  }
+  .text2
+  {
+    width: 90%;
+    margin: auto;
+  }
+  .item img
+  {
+    width: 20%;
+  }
+  .cont1
+  {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px)
+{
+  .container
+  {
+    width: 98%;
+    margin: auto;
+  }
+}
